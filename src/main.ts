@@ -13,7 +13,7 @@ import SignupVue from './views/Signup.vue';
 import LoginVue from './views/Login.vue';
 
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHistory('/liberathorvitevue/'),
     routes: [
       { path: "/", name: "Home", component: HomeVue },
       { path: "/signup", name: "Signup", component: SignupVue },
