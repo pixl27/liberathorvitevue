@@ -9,7 +9,7 @@
         <div class="login-container">
             <!-- Login content here -->
             <div class="button-container">
-                <button class="signup-button">S'INSCRIRE</button>
+                <Button class="signup-button">S'INSCRIRE</button>
             </div>
             <div class="login-form">
                 <h1>Bienvenue !</h1>
@@ -21,17 +21,17 @@
                     <input type="email" class="form-control" id="email" aria-describedby="emailHelp"><br>
                     <label for="password">PASSWORD</label><br>
                     <input type="password" class="form-control" id="password" aria-describedby="emailHelp"><br>
-                    <button class="signin-button">SE CONNECTER</button>
+                    <Button class="signin-button">SE CONNECTER</button>
                 </div>
                 <div class="row">
                 <h2>Créer mon compte avec : </h2>
 
                 
-                <button class="social-button-fb">
+                <Button class="social-button-fb">
                     <i class="fab fa-facebook-f"></i>
                 </button>
 
-                <button class="social-button-google">
+                <Button class="social-button-google">
                     <i class="fab fa-google"></i> 
                 </button>
                     
@@ -41,8 +41,9 @@
 
         </div>
     </div>
+    <Button class="signup-button">S'INSCRIRE </Button>
+
 </template>
-<button class="signup-button">S'INSCRIRE</button>
 
 
 

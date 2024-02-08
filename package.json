@@ -4,16 +4,20 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "buildnocheck": "run-p build-only"
+    "build": "run-p type-check build-only",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "buildnocheck": "run-p build-only",
+    "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.1",
     "primevue": "^3.48.0",
     "vue": "^3.2.13",
-    "vue-router": "^4.0.3"
+    "vue-router": "^4.2.5"
   },
   "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.3",
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-plugin-typescript": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
