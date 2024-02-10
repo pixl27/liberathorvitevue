@@ -1,9 +1,14 @@
 
 <template>
-    <div class="container">
+
+    
+    <div class="container" >
         <div class="image-container">
+            <div class="four-pointed-star" style="font-size:168%;"></div>
             <img id="logo" src="https://i.postimg.cc/zXQXmR70/logotop.png" alt="Logo">
             <div id="circle"></div>
+            <div id="circle2"></div>
+            <div id="circle4"></div>
             <img src="../assets/orientation.jpg" alt="Orientation Image" style="margin-top: 30%; width: 100%;">
         </div>
         <div class="login-container">
@@ -16,22 +21,23 @@
                 <h2>Enregistrer Votre Compte</h2> 
                 <div class="form-group">
                     <label for="name">NOM</label><br>
-                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp"><br>
+                    <InputText type="text" class="form-control" id="name" aria-describedby="emailHelp"/><br>
                     <label for="email">EMAIL</label><br>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"><br>
+                    <InputText type="email" class="form-control" id="email" aria-describedby="emailHelp"/><br>
                     <label for="password">PASSWORD</label><br>
-                    <input type="password" class="form-control" id="password" aria-describedby="emailHelp"><br>
+                    <InputText type="password" class="form-control" id="password" aria-describedby="emailHelp"/><br>
                     <Button class="signin-button">SE CONNECTER</button>
                 </div>
                 <div class="row">
                 <h2>Créer mon compte avec : </h2>
 
                 
-                <Button class="social-button-fb">
+               
+                <Button class="facebook-button">
                     <i class="fab fa-facebook-f"></i>
                 </button>
 
-                <Button class="social-button-google">
+                <Button class="facebook-button">
                     <i class="fab fa-google"></i> 
                 </button>
                     
@@ -41,7 +47,7 @@
 
         </div>
     </div>
-    <Button class="signup-button">S'INSCRIRE </Button>
+
 
 </template>
 
@@ -49,9 +55,12 @@
 
 
 <style scoped>
+
+
 .fab{
     font-size: 30px;
 }
+
 .social-button-fb {
     margin-left: 20px;
     background-color: #b7d6d4; /* Facebook's color */
@@ -75,8 +84,22 @@
     margin-top: 5%;
 }
 .login-form{
-    margin-top: 5%;
+    margin-top: 2%;
     margin-left: 5%;
+}
+
+.facebook-button {
+    margin-left: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* adjust as needed */
+    height: 50px; /* adjust as needed */
+    border-radius: 50%; /* makes the button circular */
+    background-color: #b7d6d4; /* Facebook's color */
+    color: #0c0c0c; /* white color for the icon */
+    border: 2px solid black; /* add a black border */
+    font-size: 24px; /* adjust as needed */
 }
 
 .form-group {
@@ -86,7 +109,7 @@
     margin-top: 1%;
     margin-bottom: 2%;
     width: 1100px;
-    height: 40px; /* adjust as needed */
+    height: 70px; /* adjust as needed */
     padding: 10px; /* adjust as needed */
     border-radius: 15px; /* adjust as needed */
     font-size: 20px; /* adjust as needed */
@@ -148,13 +171,63 @@
 .login-container {
     width: 70%;
     background-color: #b7d6d4;
+    z-index: 300;
+}
+
+.four-pointed-star{
+    position: absolute;
+    /* margin: 2em auto; */
+    margin-top: 90px;
+    margin-left: 563px;
+    width: 28em;
+    font-size: 250%;
+    z-index:350;
+}
+
+#circle4 {
+            position: absolute;
+    height: 100px;
+    width: 200px;
+    border-radius: 100px 100px 0 0;
+    top: 845px;
+    left: 2%;
+    /* border-radius: 50%; */
+    background-color: #02272F;
+        }
+
+#circle2 {
+    position: absolute;
+    top: 750px;
+    left: 500px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #EEBE41;
+}
+
+.four-pointed-star:before{
+  content:"";
+  position:absolute;
+  background:#EEBE41;
+  width:1em;
+  height:1.15em;
+  transform:rotate(-45deg) skewX(22.5deg) skewY(22.5deg);
+}
+
+.four-pointed-star:after{
+  content:"";
+  position:absolute;
+  background:#EEBE41;
+  width:1em;
+  height:1.15em;
+  transform:rotate(45deg) skewX(22.5deg) skewY(22.5deg);
 }
 
 #logo {
     position: absolute;
-    top: 25px;
-    left: 49px;
-    width: 104px;
+    top: 20px;
+    left: 20px;
+    width: 125px;
     height: 76px;
     z-index: 300;
 }
@@ -169,4 +242,5 @@
     background-color: #02272F;
    
 }
+
 </style>

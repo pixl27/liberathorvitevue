@@ -8,6 +8,7 @@
             background-position: top left;
 
             overflow-x: hidden;
+            margin: auto;
         }
 /* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

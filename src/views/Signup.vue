@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://static.staticsave.com/csscdn/main.css" rel="stylesheet">  
 </head>
-<body>
+<body >
     <img id="logo" src="https://i.postimg.cc/zXQXmR70/logotop.png" alt="Logo">
     <div id="circle"></div>
     <div id="circle2"></div>
@@ -52,15 +52,15 @@
     <div class="icon-container">
         <div class="icon-text">
 <img src="https://i.postimg.cc/52Wksjgx/Capture-d-cran-2024-02-06-111236.png">
-            <p class="customlabel">Text 1</p>
+            <p class="customlabel">ETUDIANT</p>
         </div>
         <div class="icon-text">
             <img src="https://i.postimg.cc/52Wksjgx/Capture-d-cran-2024-02-06-111236.png">
-            <p class="customlabel">Text 2</p>
+            <p class="customlabel">PARENTS</p>
         </div>
         <div class="icon-text">
             <img src="https://i.postimg.cc/52Wksjgx/Capture-d-cran-2024-02-06-111236.png">
-            <p class="customlabel">Text 3</p>
+            <p class="customlabel">ENSEIGNANTS</p>
         </div>
     </div>
 </div>
