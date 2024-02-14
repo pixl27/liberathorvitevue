@@ -80,7 +80,7 @@
         <div class="row">
 
             <div class="col-md-6 content" style= "margin-top: 11%;">
-                <h1 style="font-size: 25px;color: black;">Pourquoi Liberathor </br> est si important ?</h1>
+                <h1 style="font-size: 25px;color: black;">Pourquoi Liberatohr </br> est si important ?</h1>
                 <p style="color: black;"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
                     <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
                   </svg>
@@ -121,9 +121,11 @@
         </div>
         <div class="row w-100" style="margin-top: 5%;">
             <div class="col-md-12 position-relative">
-                <img src="https://i.postimg.cc/X7PzQWTq/bannierbas.jpg" class="img-fluid w-100" style=" position: absolute;
-                width: 100%;
-                left: -6%;-webkit-border-radius:0px 65px 65px 0px" alt="Responsive image">
+                <img src="https://i.postimg.cc/vZ6Z030F/image.png"style="    position: absolute;
+    /* width: 100%; */
+    left: -14%;
+    width: 50%;
+    -webkit-border-radius: 0px 65px 65px 0px;" alt="Responsive image">
                 <div class="position-absolute" style="margin-top: 16%; left: 58%; transform: translate(-50%, -50%); color: black">
                     <h1 style="    font-size: xx-large;">Où suis-je dans ma poursuite de ma « raison d’être » ?</h1>
                     <p style="text-align: justify; letter-spacing: 0px;font-size:small;">Vous n’êtes pas venus sur terre par hasard ni par erreur. Dieu vous a 
@@ -156,7 +158,7 @@ que vous êtes peut-être confus dans votre connaissance de vos potentiels.</p>
 
             <div class="col-md-6">
                 <h2>Nos Partenaires</h2>
-                <img width="500px" src="https://i.postimg.cc/YCmyPVH3/partenaire.png" alt="Partenaire">
+                <img width="500px" src="https://i.postimg.cc/N09C9rGx/Capture-d-cran-2024-02-14-084621-removebg-preview.png" alt="Partenaire">
             </div>
 
         </div>

@@ -44,23 +44,21 @@
 
             <div class="col-md-6 content" style= "margin-top: 11%;position: absolute;">
                 <h1 style="font-size: 64px;color: brown;">Bienvenue !</h1>
-                <h1 style="font-size: 31px;color: darkgrey;">Créer Votre Compte</br></h1>
+                <h1 style="font-size: 31px;color: darkgrey;">Créer Votre Compte<br/></h1>
 
 
             </div>
             <div class="col-md-6" style="background-color: white; margin-top: 11%; height: 238px;     width: 838px;   margin-left: 905px; border-radius: 37px; padding: 20px;">
     <div class="icon-container">
-        <div class="icon-text">
-<img src="https://i.postimg.cc/52Wksjgx/Capture-d-cran-2024-02-06-111236.png">
-            <p class="customlabel">ETUDIANT</p>
-        </div>
-        <div class="icon-text">
-            <img src="https://i.postimg.cc/52Wksjgx/Capture-d-cran-2024-02-06-111236.png">
-            <p class="customlabel">PARENTS</p>
-        </div>
-        <div class="icon-text">
-            <img src="https://i.postimg.cc/52Wksjgx/Capture-d-cran-2024-02-06-111236.png">
-            <p class="customlabel">ENSEIGNANTS</p>
+        <div 
+            class="icon-text" 
+            v-for="(option, index) in options" 
+            :key="index" 
+            @click="selectOption(option)"
+            :class="{ 'selected': selectedOption === option }"
+        >
+            <img src="https://i.postimg.cc/bwjFDvSX/placholder-removebg-preview.png">
+            <p class="customlabel">{{ option }}</p>
         </div>
     </div>
 </div>
@@ -144,11 +142,11 @@
     </div>
     <div class="form-group">
         <div class="input-container" style="z-index: 1;">
-            <label  class="customlabel" for="addresse">addresse:</label>
+            <label  class="customlabel" for="adresse">Adresse:</label>
             <InputText style="height: 87px;
     width: 1427px;
     border: 2px solid black;
-    border-radius: 27px;" id="addresse" name="addresse"/>
+    border-radius: 27px;" id="adresse" name="adresse"/>
         </div>
     </div>
     <div class="form-group">
@@ -187,9 +185,18 @@ flex-direction: column;">
         </label>
 
     </div>
-    <Button severity="contrast"  style="display: block;border-radius: 29px; position: absolute;    width: 221px;
-    height: 75px;    font-size: x-large;   font-weight: bold;     bottom: -482px;
-    left: 160px; margin-top: 20px;">Se connecter</button>
+    <Button severity="contrast"  style="    display: block;
+    margin-top: 482px;
+    border-radius: 29px;
+    position: absolute;
+    width: 221px;
+    height: 75px;
+    font-size: x-large;
+    font-weight: bold;
+    /* bottom: -482px; */
+    /* left: 160px; */
+    margin-top: -39px;
+    margin-left: 131px;">Se connecter</button>
     <div class="spacer">
 
     </div>
@@ -199,11 +206,27 @@ flex-direction: column;">
 
 </template>
 <script lang="ts">
-export default {
+import { defineComponent } from 'vue';
 
-};
+export default defineComponent({
+    data() {
+        return {
+            options: ['ETUDIANT', 'PARENTS', 'ENSEIGNANTS'],
+            selectedOption: null as string | null,
+        }
+    },
+    methods: {
+        selectOption(option: string) {
+            this.selectedOption = option;
+        }
+    }
+})
 </script>
 <style scoped>
+.selected {
+    /* Add your CSS styles for the selected option here */
+    border: 2px solid #000;
+}
 .white-line {
     position: absolute;
     width: 212px;

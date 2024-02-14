@@ -24,7 +24,7 @@
                     <InputText type="text" class="form-control" id="name" aria-describedby="emailHelp"/><br>
                     <label for="email">EMAIL</label><br>
                     <InputText type="email" class="form-control" id="email" aria-describedby="emailHelp"/><br>
-                    <label for="password">PASSWORD</label><br>
+                    <label for="password">MOT DE PASSE</label><br>
                     <InputText type="password" class="form-control" id="password" aria-describedby="emailHelp"/><br>
                     <Button class="signin-button">SE CONNECTER</button>
                 </div>
